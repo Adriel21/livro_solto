@@ -1,0 +1,14 @@
+# Ativando a permissão de reescrita da URL
+RewriteEngine On
+
+# Se aplicará se não existir o diretório
+RewriteCond %{REQUEST_FILENAME} !-d
+# Se aplicará se não existir o arquivo
+RewriteCond %{REQUEST_FILENAME} !-f
+# Verifica se o resultado do teste é um caminho simbólico
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+# index.php?url=/index&artigo=1

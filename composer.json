@@ -1,0 +1,17 @@
+{
+    "description": "Projeto Livro Solto",
+    "authors": [
+        {
+            "name": "Adriel Lira",
+            "email": "adrieldiasdossantoslira@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core",
+            "App\\": "app",
+            "Sts\\": "app/sts"
+        }
+    },
+    "require": {}
+}
