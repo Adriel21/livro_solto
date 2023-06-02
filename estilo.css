@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap');
+
+/*configurações gerais*/
+
+
+h1, h2, h3 {
+    font-family: 'Anton';
+}
+
+p, li, button, a{
+    font-family: 'Poppins';
+    /* width: 80%;
+    margin: 0 auto; */
+}
+nav {
+    background-color: #F2C335;
+}
+
+
+nav {
+    position: absolute;
+    z-index: 9999;
+}
+
+nav li a:nth-child(1):hover, nav li a:nth-child(1):active{
+    border-radius: 15px;
+    background-color: #5a3f26e6;
+    color: white !important;
+ }
+
+
+/* Fim das configurações gerais da navegação e footer */
+
+/*css do index*/
+ .primeira-interacao{
+    background-image: linear-gradient(to bottom, #F2C335, #daae2a);
+    width: 100%;
+}
+        .img-primeira-interacao{
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 550px) {
+            .primeira-interacao h1, .primeira-interacao h2 {
+                font-size: 22px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+        }
+
+
+
+        
+        @media screen and (min-width: 775px) {
+            .btn-inicial{
+                background-color: hsl(29, 41%, 25%);
+                 width: 17%; 
+            }
+    
+        }
+
+            @media (min-width: 505px) and (max-width: 774px) {
+                .btn-inicial{
+                    background-color: hsl(29, 41%, 25%);
+                      width: 25%;  
+                }
+        
+            }
+
+                @media screen and (min-width: 360px) and (max-width: 504px) {
+                    .btn-inicial{
+                        background-color: hsl(29, 41%, 25%);
+                         margin-bottom: 10%;
+                        width: 40%;
+                    }
+                    
+                }
+    
+                
+        
+        
+        .btn-inicial  {
+            text-decoration: none;
+            color: white;
+        }
+
+            .btn-inicial a:hover{
+                color: black;
+            }
+
+            .btn-inicial:hover {
+                
+                font-weight: bold;
+                background-color: rgba(255, 255, 255, 0);
+                padding: 3px;
+            }
+/* Fim css index */
+
+/* Css do forms de login e cadastro */
+    .btn-login, .btn-cadastro{
+    background-color: hsl(29, 41%, 25%);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 1px #063d1eb7;
+    }
+
+    .btn-login:hover, .btn-cadastro:hover{
+    font-weight: bold;
+    color: black;
+    }
+
+        .termos, .privacidade, .esqueceu-a-senha {
+            color: black;
+        }
+
+            #modalOne{
+                z-index: 9999;
+            }
+    /* Fim do formulário do forms de login e cadastro */
+
+    /* css do conteudo da página inicial */
+
+            
+     .campoUm{
+        background-image: linear-gradient(to right, black, #434343
+        );
+      
+       color: white;
+        
+    } 
+
+  
+     
+        .imgUm{
+            border-radius: 25px;
+        }
+
+    .campoDois{
+        background-image: linear-gradient(to right, black, #434343
+        );
+
+        color: white;
+    }
+        .imgDois{
+            border-radius: 25px;
+        }
+      
+        .campoTres{
+            background-image: linear-gradient(to right, black, #434343
+            );
+    
+            color: white;
+        }
+
+        .imgTres{
+            border-radius: 25px;
+        }
+  
+    .campoQuatro{
+        background-image: linear-gradient(to bottom, #1D594E, #257c6c);
+        color: white;
+    }
+        .imgAnimation{
+            transform: translateY(0px);
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(-0px);
+            }
+        }
+    .sobreUm a{
+        color: white;
+    }
+
+        .imgQuatro{
+            border-radius: 25px;
+            width: 250px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+      
+            /* @media screen and (max-width: 999px) {
+                .imgQuatro {
+                    width: 40%;
+                }
+            } */
+ */
+
+    .equipe{
+        background-color: #f1f4f9;
+      
+        
+    }
+
+        .divisao{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .adriel{
+            border-radius: 50%;
+            
+        }
+
+        .btn-equipe{
+            background-color: rgb(19, 18, 18);
+        }
+
+        .btn-equipe a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-equipe a:hover {
+            background-color: rgba(19, 18, 18, 0);
+            color: black;
+            font-weight: bold;
+        }
+
+    .textAnimation {
+        transform: translateY(0px);
+        animation: float-text 5s ease-in-out infinite;
+    }
+
+    
+    @keyframes float-text {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-4px);
+        }
+
+        100% {
+            transform: translateY(-0px);
+        }
+    }
+
+    /* CSS da tela de anúncio do livro */
+    .main-anuncio {
+       /* background-image: linear-gradient(to bottom, #F2C335, #72580b);  */
+       padding-top: 25px;
+     
+    }
+
+        .div-anuncio{
+            background-color: white;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+            @media screen and (min-width: 770px) {
+                .button-foto {
+                    width: 25%;
+                }
+            }
+
+            @media screen and (max-width: 769px) {
+                .button-foto {
+                    width: 50%;
+                }
+            }
+
+            .button-foto {
+                background-color: black;
+                color: white;
+            }
+                .button-foto:hover{
+                    background-color: rgba(0, 0, 0, 0);
+                    font-weight: bold;
+                    color: black;
+                }
+         
+
+        /* css para formulário de envio de dados do livro */
+
+        @media (min-width: 992px){
+            .envio-de-arquivo {
+                margin: 0 auto;
+                width: 50%;
+        }
+           
+    }
+
+        /* fim do forms */
+
+
+          
+
+
+        /* css geral do footer */
+
+            .footer-dark {
+                padding:50px 0;
+                color:#f0f9ff;
+                background-color:#282d32;
+              }
+              
+              .footer-dark h3 {
+                margin-top:0;
+                margin-bottom:12px;
+                font-weight:bold;
+                font-size:16px;
+              }
+              
+              .footer-dark ul {
+                padding:0;
+                list-style:none;
+                line-height:1.6;
+                font-size:14px;
+                margin-bottom:0;
+              }
+              
+              .footer-dark ul a {
+                color:inherit;
+                text-decoration:none;
+                opacity:0.6;
+              }
+              
+              .footer-dark ul a:hover {
+                opacity:0.8;
+              }
+              
+              @media (max-width:767px) {
+                .footer-dark .item:not(.social) {
+                  text-align:center;
+                  padding-bottom:20px;
+                }
+              }
+              
+              .footer-dark .item.text {
+                margin-bottom:36px;
+              }
+              
+              @media (max-width:767px) {
+                .footer-dark .item.text {
+                  margin-bottom:0;
+                }
+              }
+              
+              .footer-dark .item.text p {
+                opacity:0.6;
+                margin-bottom:0;
+              }
+              
+              .footer-dark .item.social {
+                text-align:center;
+              }
+              
+              @media (max-width:991px) {
+                .footer-dark .item.social {
+                  text-align:center;
+                  margin-top:20px;
+                }
+              }
+              
+              .footer-dark .item.social > a {
+                font-size:20px;
+                width:36px;
+                height:36px;
+                line-height:36px;
+                display:inline-block;
+                text-align:center;
+                border-radius:50%;
+                box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+                margin:0 8px;
+                color:#fff;
+                opacity:0.75;
+              }
+              
+              .footer-dark .item.social > a:hover {
+                opacity:0.9;
+              }
+              
+              .footer-dark .copyright {
+                text-align:center;
+                padding-top:24px;
+                opacity:0.3;
+                font-size:13px;
+                margin-bottom:0;
+              }
+
+            /* fim do css geral footer */
+
+            /* css do botão ver disponiveis do modal da tela loginvalida */
+
+              .ver-disponiveis a{
+                text-decoration: none;
+                color: white;
+              }
+
+
+              @media screen and (min-width: 600px){
+                .select-livros{
+                    width: 20%;
+                }
+              }
+
+              @media screen and (max-width: 599px){
+                .select-livros{
+                    width: 29%;
+                    height: 25px;
+                }
+              }
+              /* fim */
+             
+          
